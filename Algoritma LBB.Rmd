@@ -1,0 +1,451 @@
+---
+title: 'LBB Academy'
+author: "Team Algoritma"
+date: "`r format(Sys.Date(), '%B %e, %Y')`"
+output:
+  html_document:
+    df_print: paged 
+    highlight: tango
+    theme: cosmo
+    toc: yes
+    toc_depth: 1
+    toc_float:
+      collapsed: yes
+  word_document:
+    toc: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+<style>
+body {
+text-align: justify}
+</style>
+
+
+Selamat atas keberhasilannya melewati course Data Visualization dan Machine Learning specialization. Dengan berakhirnya academy ini, kami menganjurkan Bapak/Ibu untuk dapat mengerjakan Learning-By-Building (LBB) untuk setiap course material. Pengerjaan LBB dimaksudkan untuk mengoptimalkan hasil pembelajaran yang telah didapatkan dikelas dan mengulas kembali materi yang Bapak/Ibu belum pahami. Berikut ini kami sertakan instruksi LBB dari setiap course disertai juga dengan dataset dan contoh LBB yang tepat.
+
+# Data Visualization Specialization {.tabset .tabset-fade .tabset-pills}
+
+## Programming for Data Science
+
+Pada LBB Programming for Data Science dan Practical Statistics ini Bapak/Ibu diminta untuk membuat suatu reporting menggunakan R markdown beserta analisis data sederhana.
+
+### **Contoh**
+Berikut merupakan beberapa contoh reporting menggunakan R yang dapat Bapak Ibu gunakan sebagai bahan acuan: 
+
+- [Eksplorasi data analisis menggunakan data retail.](http://rpubs.com/wkania/EDA_Retail)      
+- [Analisis data mie instan](http://rpubs.com/inayatus/p4ds-reyna)      
+
+### **Data**
+Bapak/Ibu dapat menggunakan dataset `retail.csv` yang ada pada materi Programming for Data Science atau dapat menggunakan data yang Bapak Ibu miliki. Berikut beberapa referensi dataset yang dapat Bapak/Ibu gunakan pada modul ini:
+
+#### Telemarketing Dataset
+
+- https://archive.ics.uci.edu/ml/datasets/bank+marketing 
+
+Data tersebut merupakan data kampanye pemasaran langsung produk deposito dari sebuah bank di Portugal. Kampanye pemasaran yang dilakukan menggunakan telepon. Terdapat beberapa variabel dari data calon nasabah dalam data tersebut seperti umur, pekerjaan, status perkawinan, hingga orang variabel yang menyatakan orang tersebut membeli product itu atau tidak.
+
+#### Spotify Dataset
+
+- https://www.kaggle.com/zaheenhamidani/ultimate-spotify-tracks-db 
+
+Data ini berisi lagu yang ada di platform music straming spotify. Data ini merekam karakterisitik dari setiap musik seperti `acousticness`, `danceability`, `instrumentalness` dll. Bapak/Ibu dapat menganalisa karakterisitik audio apa yang paling berpengaruh dalam setiap genrenya.
+
+#### Titanic
+
+- https://www.kaggle.com/c/titanic 
+
+Dataset tersebut berisi tentang biodata dari penumpang kapal titanic. Data titanic memiliki beberapa variabel seperti nama penumpang, umur, lokasi kamar pada kapal, posisi memulai hingga status selamat atau tidak dari kejadian tenggelamnya kapal titanic.
+
+### **Poin Penilaian**
+Dalam pembuatan report, hal penting yang diperlu diperhatikan adalah sebagai berikut:
+
+- Memberikan markdown title, author name, dan date.
+
+- Melakukan formating style yang Bapak Ibu sukai.
+
+- Memberikan heading pada setiap bab dan sub bab yang dibuat dalam masing-masing pembahasannya.
+
+- Melakukan import terhadap data yang digunakan.
+
+- Melakukan penjelasan terhadap data yang digunakan.
+
+- Melakukan cleansing data dan melakukan exploratory terhadap data berdasarkan business problem yang dibuat
+
+## Data Visualization
+Pada LBB Data Visualization ini Bapak/Ibu diminta untuk membuat sebuah visualisasi yang estetik dan insightful.
+
+### **Contoh**
+Berikut merupakan beberapa contoh visualisasi yang dapat Bapak/Ibu gunakan sebagai bahan referensi:
+
+- [Data Visualization - Airbnb NYC.](http://rpubs.com/wkania/DV_NYC_Airbnb) 
+- [Google Play Store Data Visualization.](http://rpubs.com/WulanAndriyani/DV-PrimaditaningtyasW)
+
+### **Data**
+
+Bapak/Ibu dapat menggunakan dataset `USvideos.csv` yang ada pada materi Data Visualization atau dapat menggunakan data yang Bapak/Ibu miliki. Berikut beberapa referensi dataset yang bisa Bapak/Ibu gunakan pada modul ini:
+
+#### Houses Rent
+
+https://www.kaggle.com/rubenssjr/brasilian-houses-to-rent
+
+Dataset ini berisi fasilitas yang disediakan dari sebuah rumah yang ingin disewakan di daerah Brazil. Data ini memiliki variabel seperti jumlah kamar, jumlah lantai, memiliki parkiran atau tidak, hingga harga sewa dari rumah tersebut. Bapak/Ibu bisa melakukan visualisasi keterhubungan antar setiap variabel yang ada.
+
+#### Titanic
+
+- https://www.kaggle.com/c/titanic 
+
+Dataset tersebut berisi tentang biodata dari penumpang kapal titanic. Data titanic memiliki beberapa variabel seperti nama penumpang, umur, lokasi kamar pada kapal, posisi memulai hingga status selamat atau tidak dari kejadian tenggelamnya kapal titanic.
+
+#### Australia Fires
+
+- https://github.com/rfordatascience/tidytuesday/tree/master/data/2020/2020-01-07
+
+Data tersebut merekam lokasi kebakaran yang terjadi di Australia, terdapat beberapa data yang dapat divisualisasikan seperti temperature, curah hujan, serta lokasi kebakaran. Bapak/Ibu dapat menggunakan `leaflet` untuk memvisualisasikan daerah kebakaran dalam bentuk peta.
+
+### **Poin Penilaian**
+Dalam pembuatan report, jangan lupa untuk meliputi hal-hal berikut:
+
+- Tahapan data pre-processing yang dilakukan sebelum membuat visualisasi
+
+- Insight yang ingin disampaikan
+
+- Kesesuaian jenis plot yang digunakan
+
+- Estetika visualisasi yang ditampilkan:
+  
+  1. Penggunaan warna (fill/color) dan penyesuaian tema (theme)
+
+  2. Pemberian label yang sesuai dengan informasi:
+
+- Label dari sumbu x / y
+
+- Title/Subtitle
+
+- Legend, etc.
+
+## Interactive Plotting
+
+Pada LBB Interactive Plotting Bapak/Ibu diminta untuk membuat sebuah interactive dashboard (flexdashboard/shiny/shinydashboard) yang estetik dan insightful. 
+
+### **Contoh **
+
+Berikut merupakan beberapa contoh dashboard yang dapat Bapak/Ibu gunakan sebagai bahan referensi:
+
+- https://nplaybook.shinyapps.io/earth_quake/
+
+- https://risalandika.shinyapps.io/LBB_IP_HYDRA_NIGHT_B_RISAL_ANDIKA/
+
+- https://gulistianifuzuli.shinyapps.io/LBB_IP_Gulis/
+
+
+### **Data**
+Bapak/Ibu dapat menggunakan dataset `USvideos.csv` yang ada pada materi Data Visualization atau dapat menggunakan data yang Bapak/Ibu miliki. Berikut beberapa referensi dataset yang bisa Bapak/Ibu gunakan pada modul ini:
+
+#### Houses Rent
+
+https://www.kaggle.com/rubenssjr/brasilian-houses-to-rent
+
+Dataset ini berisi fasilitas yang disediakan dari sebuah rumah yang ingin disewakan di daerah Brazil. Data ini memiliki variabel seperti jumlah kamar, jumlah lantai, memiliki parkiran atau tidak, hingga harga sewa dari rumah tersebut. Bapak/Ibu bisa melakukan visualisasi keterhubungan antar setiap variabel yang ada.
+
+#### Titanic
+
+- https://www.kaggle.com/c/titanic 
+
+Dataset tersebut berisi tentang biodata dari penumpang kapal titanic. Data titanic memiliki beberapa variabel seperti nama penumpang, umur, lokasi kamar pada kapal, posisi memulai hingga status selamat atau tidak dari kejadian tenggelamnya kapal titanic.
+
+
+#### Australia Fires
+
+- https://github.com/rfordatascience/tidytuesday/tree/master/data/2020/2020-01-07
+
+Data tersebut merekam lokasi kebakaran yang terjadi di Australia, terdapat beberapa data yang dapat divisualisasikan seperti temperature, curah hujan, serta lokasi kebakaran. Bapak/Ibu dapat menggunakan `leaflet` untuk memvisualisasikan daerah kebakaran dalam bentuk peta.
+
+
+Bapak/Ibu dapat menggunakan dataset `youtubetrends.csv` yang ada pada materi interactive plotting atau dapat menggunakan data yang Bapak Ibu miliki. 
+
+
+### **Referensi**
+Berikut beberapa referensi mengenai dashboard untuk mempermudah pembuatan LBB:
+
+- https://shiny.rstudio.com/gallery/
+
+- https://rstudio.github.io/shinydashboard/structure.html
+
+- https://www.tychobra.com/shiny/
+
+- https://fontawesome.com/icons?from=io
+
+### **Poin Penilaian**
+
+Berikut point penilaian untuk LBB Interactive Plotting:
+
+- Tahapan data pre-processing menggunakan dplyr
+
+- Plot yang ditampilkan pada dashboard sudah interaktif
+
+- Setiap plot yang ditampilkan menampilkan informasi yang relevan dari dashboard
+
+# Machine Learning Specialization {.tabset .tabset-fade .tabset-pills}
+
+## Regression Model
+
+Pada LBB Regression Model Bapak/Ibu diminta untuk berlatih dalam menyelesaikan studi kasus model regresi.
+
+### **Contoh **
+Berikut merupakan beberapa contoh regression analysis yang mungkin bisa menjadi acuan atau inspirasi Bapak/Ibu membuat sebuah study case:
+
+- [Analisis regresi terhadap harga mobil](http://rpubs.com/Argaadya/531140) 
+
+- [Analisis regresi terhadap life expectancy negara-negara di dunia](http://rpubs.com/nabiilahardini/happiness)
+
+### **Data**
+
+Berikut beberapa saran dataset yang bisa Bapak/Ibu gunakan sebagai case regression analysis pada modul ini:
+
+#### Crime Dataset
+- Data `crime.csv` yang sudah disediakan pada folder materi. Silahkan eksplorasi target variabel `crime_rate` untuk dapat dianalisis bagaimana pengaruh variabel-variabel socio-demographic terhadap tingkat kejahatan di suatu daerah.
+
+#### House Pricing
+
+Data pendaftaran universtas terkait parameter yang dianggap penting dalam penerimaan pendaftaran mahasiswa baru. Ambilah salah satu perspektif pada case tersebut lalu cobalah untuk melakukan prediksi salah satu variabel `skor` dari parameter-parameter lainnya.
+
+- https://www.kaggle.com/greenwing1985/housepricing. 
+
+Data simulasi harga rumah berdasarkan atribut-atribut propertinya.
+
+#### **Poin Penilaian**
+
+Dalam pembuatan report, perlu diperhatikan beberapa hal sebagai berikut:
+
+- Pemilihan target variabel tergantung dari perspektif case yang ingin diambil
+
+- Analisis data dan proses pemilihan variabel prediktor / feature selection
+
+- Melakukan Uji asumsi terhadap model yang dibuat     
+
+- Evaluasi model berdasarkan nilai Error (RMSE,MSE,MAE)     
+
+- Interpretasi model dan rekomendasi terkait case awal
+
+## Classification 1
+
+Pada LBB Classification 1, Bapak/Ibu diminta untuk menyelesaikan study case classification analysis. 
+
+### **Contoh **
+Berikut merupakan beberapa contoh regression analysis yang mungkin bisa menjadi acuan atau insiprasi Bapak/Ibu membuat sebuah study case:
+
+- [Klasifikasi penyakit Jantung menggunakan KNN dan Logistic regression](http://rpubs.com/inayatus/klasifikasi)
+
+- [User Score Classification With Sentiment Analysis: Logistic Regression and K-NN](http://rpubs.com/Argaadya/529538)     
+
+Berikut beberapa saran dataset yang bisa Bapak/Ibu gunakan sebagai case regression analysis pada modul ini:
+
+### **Data**
+
+#### Wholesale Dataset
+
+- Data `wholesale.csv` yang sudah disediakan pada folder materi. Silahkan eksplorasi target variabel `channel` untuk dapat dianalisis bagaimana pengaruh variabel-variabel apa yang sangat mempengaruhi untuk sebuah data dikelompokan sebagai channel tertentu.
+
+#### Heart Disease Dataset
+
+- https://www.kaggle.com/ronitf/heart-disease-uci Data mengenai penyakit jantung, bagaimana cara mengklasifikasikan apakah seseorang memiliki penyakit jantung berdasarkan ciri - ciri tertentu.
+
+#### Titanic Dataset
+
+- https://www.kaggle.com/c/titanic . Dataset tersebut berisi tentang biodata dari penumpang kapal titanic, dari biodata tersebut apakah dapat digunakan untuk memprediksi apakah penumpang tersebut selamat atau tidak.
+
+### **Point penilaian**
+Dalam pembuatan report, perlu diperhatikan hal-hal berikut:
+
+- Pemilihan target variabel tergantung dari perspektif case yang ingin diambil
+
+- Analisis data dan proses pemilihan variabel prediktor / feature selection
+
+- Pre-processing data dari data cleansing hingga cross validation.
+
+- Penjelasan mengenai evaluasi dari model yang digunakan, apakah metrik terbaik untuk mengevaluasi model dan mengapa.
+
+- Mendokumentasikan analisa tentang cara meningkatkan performa dari modelnya (Misal proses pemilihan k optimum pada model knn). dan/atau perbandingan dari model logistic dan knn.
+
+## Classification 2
+
+Pada LBB Classification 2 Bapak/Ibu diminta untuk menyelesaikan study case classification analysis menggunakan metode Naive Bayes / Decision Tree / Random Forest.
+
+### **Contoh**
+Berikut merupakan beberapa contoh classification analysis yang mungkin bisa menjadi acuan atau insiprasi Bapak/Ibu membuat sebuah study case:
+
+- [Klasifikasi kualitas dari jenis wine menggunakan Naive Bayes dan tree](https://rpubs.com/nabiilahardini/wine-ndf)
+
+- [Klasifikasi Naive Bayes, Decision Tree dan Random Forest. untuk memprediksi (mendiagnosa) penyakit kanker payudara yang di alami seorang pasien berdasarkan data yang telah dilaporkan oleh Dr. William H. Wolberg](http://rpubs.com/knoxxturnal/Perbandingan_Analisis_Breast_Cancer_Dengan_Pendekatan_Metode_Naive_Bayes_Decision_Tree_dan_Random_Forest)
+
+### **Data**
+Berikut beberapa saran dataset yang bisa Bapak/Ibu gunakan sebagai case classification analysis pada modul ini:
+
+#### Bank Marketing
+- https://archive.ics.uci.edu/ml/datasets/bank+marketing 
+
+Data tersebut merupakan data mengenai telemarketing dari sebuah bank di Portugal. Menggunakan data tersebut kita dapat memprediksi calon nasabah mana yang akan membeli product ketika di telepon oleh pihak bank.
+
+#### Human Activity Recognition Using Smartphones 
+- https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
+
+Data tersebut berisi tentang data pergerakan manusia yang di rekam menggunakan akselerometer dan gyroscope yang terdapat pada smartphone. Dengan menggunakan Informasi tersebut Bapak/Ibu dapat menklasikifikasikan manusia tersebut sedang melakukan aktivitas apa.
+
+#### Titanic
+
+- https://www.kaggle.com/c/titanic 
+
+Dataset tersebut berisi tentang biodata dari penumpang kapal titanic, dari biodata tersebut apakah dapat digunakan untuk memprediksi apakah penumpang tersebut selamat atau tidak.
+
+### **Point Penilaian**
+Dalam pembuatan report, perlu diperhatikan hal-hal berikut:
+
+- Pemilihan target variabel tergantung dari perspektif case yang ingin diambil
+
+- Analisis data dan proses pemilihan variabel prediktor / feature selection
+
+- Pre-processing data dari data cleansing hingga cross validation.
+
+- Penjelasan mengenai evaluasi dari model yang digunakan, apakah metrik terbaik untuk mengevaluasi model dan mengapa.
+
+- Mendokumentasikan analisa tentang cara meningkatkan performa dari modelnya (Misal proses pruning tree). dan/atau perbandingan dari model naive bayes dan tree.
+
+## Unsupervised Learning
+
+Pada LBB Unsupervised Learning Bapak/Ibu diminta untuk menyelesaikan study case Unsupervised learning menggunakan metode PCA atau K-means clustering. 
+
+### **Contoh**
+Berikut merupakan beberapa contoh penerapan unsupervised learning yang mungkin bisa menjadi acuan atau inspirasi Bapak/Ibu membuat sebuah study case:
+
+- [Mengelompokkan jenis - jenis benih gandum](http://rpubs.com/nabiilahardini/wheatseed) 
+
+- [Analisis clustering pada karakter game pokemon](http://rpubs.com/Argaadya/540881) 
+
+### **Data**
+Berikut beberapa saran dataset yang bisa Bapak/Ibu gunakan sebagai case Unsupervised learning analysis pada modul ini:
+
+#### Wholesale Dataset
+
+- Data wholesale.csv yang terdapat pada materi C1, Bapak/Ibu dapat mengelompokkan data tersebut dengan menggunakan clustering dan membandingkan hasilnya dengan hasil klasifikasi
+
+#### Spotify Dataset
+- https://www.kaggle.com/zaheenhamidani/ultimate-spotify-tracks-db 
+
+Data ini berisi lagu yang ada di streaming platform spotify yang diberikan fitur audio yang penjelasannya dapat dilihat pada link berikut : https://developer.spotify.com/documentation/web-api/reference/tracks/get-audio-features/ . Bapak Ibu dapat melakukan analisis clustering pada lagu lagu tersebut dan juga dapat menganalisa fitur audio apa yang paling berpengaruh dalam popularitas sebuah lagu.
+
+#### Flower Recognition
+
+- https://www.kaggle.com/alxmamaev/flowers-recognition 
+
+Data ini berisi gambar bunga. Bapak Ibu dapat mencoba untuk menggunakan PCA untuk melakukan image compression, dan dapat membandingkan hasil reduksi dengan original, berdasarkan dari visual dan ukuran file.
+
+### **Point Penilaian**
+
+Dalam pembuatan report, perlu diperhatikan hal-hal berikut:
+
+- Proses preprocessing data berupa cleansing dan eksplorasi data analisis
+
+- Penjelasan mengenai pemilihan parameter (Sebagai contoh pemilihan k pada k-mean clustering atau jumlah PC yang digunakan pada PCA)
+
+- Sertakan beberapa visualisasi yang memberikan insight tambahan yang berguna untuk menarik kesimpulan pada case tersebut
+
+
+## Time Series
+
+Pada LBB Time Series Bapak/Ibu diminta untuk menyelesaikan study case Time Series & Forecasting.
+
+### **Contoh **
+Berikut merupakan beberapa contoh analisis time series yang mungkin bisa menjadi acuan atau inspirasi Bapak/Ibu membuat sebuah study case:
+
+- [Prediksi air traffic atau frekuensi penerbangan pesawat di Bandara New York](https://rpubs.com/nabiilahardini/ts-flight) 
+
+- [Analisis time series pada data pengunjung situs Wikipedia](https://rpubs.com/wahyuditr/ts)
+
+### **Data**
+
+Berikut beberapa saran dataset yang bisa Bapak/Ibu gunakan sebagai case Time Series & Forecasting pada modul ini:
+
+#### Chicago Crime Dataset
+
+- Chicago Crime Dataset (https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2). Dikarenakan ukuran data yang amat besar, Bapak/Ibu dapat melakukan analisis time series untuk salah satu jenis crime saja.
+
+#### tsdl Packages
+
+- Data dari `tsdl` package (https://pkg.yangzhuoranyang.com/tsdl/) berisi banyak data time series dari beragam domain bisnis. Versi development dari package tersebut dapat diinstall dari GitHub dengan terlebih dahulu menginstall package `devtools` kemudian menggunakan `install_github()` seperti dibawah ini:
+
+```{r eval=F}
+install.packages("devtools")
+devtools::install_github("FinYang/tsdl")
+```
+
+### **Point Penilaian**
+Dalam pembuatan report, perlu diperhatikan hal-hal berikut:
+
+- Data pre-processing berupa data cleansing dan pelengkapan data
+
+- Proses EDA berupa analisis trend dan seasonal menggunakan plot sederhana
+
+- Penjelasan pemilihan model time series dan asumsinya.
+
+- Evaluasi model dan pemilihan model terbaik.
+
+## Neural Network
+
+Pada LBB Neural Network Bapak/Ibu diminta untuk menyelesaikan study case Neural Network dan Deep Learning.
+
+### **Contoh**
+Berikut merupakan beberapa contoh Neural Network dan Deep Learning yang mungkin bisa menjadi acuan atau inspirasi Bapak/Ibu membuat sebuah study case:
+
+- https://rpubs.com/meilinie/lbbnn
+
+- (TABULAR) https://github.com/bagasbgy/keras-examples/tree/classification-dense
+
+- (IMAGE) https://github.com/bagasbgy/keras-examples/tree/image_classification-dense
+
+### **Data**
+Berikut beberapa saran dataset yang bisa Bapak/Ibu gunakan sebagai case Neural Network dan Deep Learning analysis pada modul ini:
+
+#### IBM Attrition Dataset (Tabular)
+- (TABULAR) IBM Attrition dataset https://github.com/bagasbgy/keras-examples/tree/classification-dense/data/data-clean.csv
+
+Sumber data didapat dari
+https://www.kaggle.com/pavansubhasht/ibm-hr-analytics-attrition-dataset atau
+
+https://www.ibm.com/communities/analytics/watson-analytics-blog/hr-employee-attrition/
+
+
+#### MNIST Dataset (Image)
+
+MNIST dataset https://github.com/bagasbgy/keras-examples/tree/image_classification-dense/data
+
+Sumber data didapat dari https://www.kaggle.com/scolianni/mnistasjpg#img_10071.jpg
+
+- atau menggunakan data pilihan Bapak atau Ibu sendiri.
+
+### **Point Penilaian**
+Dalam pembuatan report, perlu diperhatikan hal-hal berikut:
+
+- Preprocess dataset, terutama part di mana data dipersiapkan agar dapat digunakan dalam framework keras
+
+- Pembuatan arsitektur neural network, dan penjelasan singkat terkait arsitektur yang digunakan
+
+- Persiapan model menggunakan "compile" dan fitting model
+
+- Evaluasi model seperti machine learning pada umumnya
+
+# Catatan
+
+> Hasil report analysis yang telah dikerjakan, silahkan diunggah ke dalam salah satu situs publikasi pilihan Bapak/Ibu (Github / Rpubs / Kaggle Kernel / Website pribadi), kemudian silahkan mencantumkan linknya saat melakukan Submit LBB. Link kepada situs publikasi pilihan Bapak/Ibu akan kami cantumkan pada CV Algoritma yang akan kami buatkan sebagai salah satu bagian dari Algoritma Career Support. Kami akan memberikan feedback terkait pekerjaan Bapak/Ibu yang mengumpulkan modul Learn by Building ini mengenai hal-hal yang dirasa bisa dikembangkan.
+
+> Jika ada pertanyaan yang ingin Bapak/Ibu tanyakan, silahkan dikirim ke mentor@algorit.ma. Kami akan dengan senang hati membantu.
+
+> Terima kasih dan good luck!
+
+
+
+
